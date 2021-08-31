@@ -34,6 +34,7 @@ $enable-cssgrid: true; // stylelint-disable-line scss/dollar-variable-default
 // fusv-enable
 @import "../../../scss/grid";
 
+
 // Load docs components
 @import "variables";
 @import "navbar";
@@ -53,6 +54,8 @@ $enable-cssgrid: true; // stylelint-disable-line scss/dollar-variable-default
 @import "colors";
 @import "clipboard-js";
 @import "placeholder-img";
+@import "signin";
+
 
 // Load docs dependencies
 @import "syntax";

@@ -1,5 +1,6 @@
 {{- "<!-- Bootstrap core CSS -->" | safeHTML }}
 {{ if eq hugo.Environment "production" -}}
+
 {{ if eq .Page.Params.direction "rtl" -}}
 <link href="/docs/{{ .Site.Params.docs_version }}/dist/css/bootstrap.rtl.min.css" rel="stylesheet" {{ printf "integrity=%q" .Site.Params.cdn.css_rtl_hash | safeHTMLAttr }} crossorigin="anonymous">
 {{- else -}}
@@ -21,4 +22,5 @@
 {{- $style := resources.Get "scss/docs.scss" | toCSS $sassOptions | postCSS $postcssOptions }}
 
 <link href="{{ $style.Permalink | relURL }}" rel="stylesheet">
+
 {{- end }}

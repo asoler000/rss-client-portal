@@ -1,6 +1,6 @@
 languageCode:           "en"
 title:                  "Bootstrap"
-baseURL:                "https://getbootstrap.com"
+baseURL:                "https://github.com/asoler000/rss-client-portal/"
 enableInlineShortcodes: true
 
 markup:
@@ -41,11 +41,15 @@ module:
     - source:           site/static/docs/5.1/assets/img/favicons/favicon.ico
       target:           static/favicon.ico
 
+
 params:
   description:          "The most popular HTML, CSS, and JS library in the world."
   authors:              "Mark Otto, Jacob Thornton, and Bootstrap contributors"
   social_image_path:    /docs/5.1/assets/brand/bootstrap-social.png
   social_logo_path:     /docs/5.1/assets/brand/bootstrap-social-logo.png
+  dashboard_path : /dashboard.html
+  searchfilter_path : /searchFilter.html
+  home_path : /home.html
 
   current_version:      "5.1.0"
   current_ruby_version: "5.1.0"
@@ -59,6 +63,8 @@ params:
   blog:                 "https://blog.getbootstrap.com/"
   themes:               "https://themes.getbootstrap.com/"
   icons:                "https://icons.getbootstrap.com/"
+ 
+
 
   download:
     source:             "https://github.com/twbs/bootstrap/archive/v5.1.0.zip"
