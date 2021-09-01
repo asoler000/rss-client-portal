@@ -1,6 +1,6 @@
 languageCode:           "en"
 title:                  "Bootstrap"
-baseURL:                "https://github.com/asoler000/rss-client-portal/"
+baseURL:                "https://getbootstrap.com"
 enableInlineShortcodes: true
 
 markup:
@@ -20,25 +20,25 @@ enableRobotsTXT:        true
 metaDataFormat:         "yaml"
 disableKinds:           ["404", "taxonomy", "term", "RSS"]
 
-publishDir:             "_docs"
+publishDir:             "_site"
 
 module:
   mounts:
     - source:           dist
       target:           static/docs/5.1/dist
-    - source:           docs/assets
+    - source:           site/assets
       target:           assets
-    - source:           docs/content
+    - source:           site/content
       target:           content
-    - source:           docs/data
+    - source:           site/data
       target:           data
-    - source:           docs/layouts
+    - source:           site/layouts
       target:           layouts
-    - source:           docs/static
+    - source:           site/static
       target:           static
-    - source:           docs/static/docs/5.1/assets/img/favicons/apple-touch-icon.png
+    - source:           site/static/docs/5.1/assets/img/favicons/apple-touch-icon.png
       target:           static/apple-touch-icon.png
-    - source:           docs/static/docs/5.1/assets/img/favicons/favicon.ico
+    - source:           site/static/docs/5.1/assets/img/favicons/favicon.ico
       target:           static/favicon.ico
 
 
