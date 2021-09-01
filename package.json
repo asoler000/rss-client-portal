@@ -172,5 +172,8 @@
     "peerDependencies": {
       "@popperjs/core": "^2.9.3"
     }
+  },
+  "dependencies": {
+    "hugo": "^0.0.3"
   }
 }
